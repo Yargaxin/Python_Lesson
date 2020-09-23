@@ -1,0 +1,6 @@
+Ivanov:10000
+Petrov:15000
+Sidorov:25000
+Petrovsky:26000
+Kotov:18000
+Sobakin:21000
