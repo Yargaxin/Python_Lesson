@@ -1,15 +1,13 @@
 def file():
 	my_text = None
 	try:
-		while True:
-			with open('my_file.txt', 'w', encoding='utf-8') as my_file:
+		with open('my_file.txt', 'w', encoding='utf-8') as my_file:
+			while True:
 				my_text = input('Enter text: ')
-				my_file.write(my_text)
-				yes_or_no = input('Want to overwrite a file (y/n):').lower()
-				if yes_or_no == 'n':
+				if not my_text:
 					break
 				else:
-					pass
+					my_file.write(f'{my_text}\n')
 	except:
 		print('Error!')
 file()
