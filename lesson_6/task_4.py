@@ -36,9 +36,6 @@ class MainCar():
 		return f'Current vehicle speed: {self.speed} kilometers / hour'
 
 class TownCar(MainCar):
-	def __init__(self, name, color, speed, is_police):
-		super().__init__(name, color, speed, is_police)
-
 	def show_info(self):
 		print('\nYour Town Car:')
 		print(f'Name:{self.name}, Color:{self.color}, Speed:{self.speed}\n')
@@ -51,17 +48,11 @@ class TownCar(MainCar):
 			return f'No violations! {self.speed} kilometers/hour'
 
 class SportCar(MainCar):
-	def __init__(self, name, color, speed, is_police):
-		super().__init__(name, color, speed, is_police)
-	
 	def show_info(self):
 		print('\nYour Sport Car')
 		print(f'Name:{self.name}, Color:{self.color}, Speed:{self.speed}')
 
 class WorkCar(MainCar):
-	def __init__(self, name, color, speed, is_police=None):
-		super().__init__(name, color, speed, is_police)
-	
 	def show_info(self):
 		print('\nYour Work Car:')
 		print(f'Name:{self.name}, Color:{self.color}, Speed:{self.speed}\n')
@@ -74,8 +65,6 @@ class WorkCar(MainCar):
 			return f'No violations! {self.speed} kilometers/hour'
 
 class PoliceCar(MainCar):
-	def __init__(self, name, color, speed, is_police):
-		super().__init__(name, color, speed, is_police)
 	def police_car(self):
 		print('\nPolice Car!')
 		print('It is not yours car but be careful! Do not go fast!')
@@ -83,7 +72,7 @@ class PoliceCar(MainCar):
 
 mc = MainCar(name, color, speed, False)
 tc = TownCar('Mazda', 'Green', 60, False)
-wc = WorkCar('Mersedes', 'Red', 120)
+wc = WorkCar('Mersedes', 'Red', 120, False)
 pc = PoliceCar('Ford', 'White', 80, True)
 sc = SportCar('Tesla', 'Black', 350, False)
 
