@@ -17,9 +17,6 @@ class Worker():
 		self._income = income_dict 
 
 class Position(Worker):
-	def __init__(self, name, surname, position):
-		super().__init__(name, surname, position)
-
 	def get_full_name(self):
 		return f'Name:{self.name}, Surname:{self.surname}, Position:{self.position}'
 
