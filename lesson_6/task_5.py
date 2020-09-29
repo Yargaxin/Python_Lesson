@@ -6,23 +6,14 @@ class Stationery():
 		return 'Start rendering'
 
 class Pen(Stationery):
-	def __init__(self, title):
-		super().__init__(title)
-
 	def draw(self):
 		return self.title
 
 class Pencil(Stationery):
-	def __init__(self, title):
-		super().__init__(title)
-
 	def draw(self):
 		return self.title
 
 class Handle(Stationery):
-	def __init__(self, title):
-		super().__init__(title)
-
 	def draw(self):
 		return self.title
 
