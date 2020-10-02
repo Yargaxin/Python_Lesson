@@ -1,4 +1,3 @@
-import numpy as np
 from random import randint
 rand_m1_left = [randint(121, 590) for i in range(2)]
 rand_m1_middle = [randint(45, 100) for i in range(2)]
