@@ -26,4 +26,5 @@ class Suit(Clothing):
 
 coat = Coat(10)
 suit = Suit(3)
-print(coat + suit)
+coat_suit = coat + suit
+print(coat_suit)
