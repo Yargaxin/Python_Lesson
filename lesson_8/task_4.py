@@ -40,7 +40,7 @@ class OfficeEquipment():
 					print(f'Amount office equipment: {len(self.main_list)}\n')
 			except:
 				print('Error!')
-
+	@property
 	def warehouse(self):
 		for key, value in self.data_dict.items():
 			print(f'{key}:{value}')
@@ -73,10 +73,10 @@ printer_1 = Printer('Samsung', 'RED', 2020, 300, 1, 15)
 printer_2 = Printer('Asus', 'BLACK', 1999, 140, 2, 10)
 xerox = Xerox('Lenovo', 'WHITE', 2000, 156, 2, 9)
 scanner = Scanner('Nokia', 'RED', 2020, 300, 1, 15)
-scanner.warehouse()
+scanner.warehouse
 print(scanner)
-xerox.warehouse()
+xerox.warehouse
 print(xerox)
-printer_2.warehouse()
+printer_2.warehouse
 print(printer_2)
 printer_1.main()
