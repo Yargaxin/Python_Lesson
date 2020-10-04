@@ -24,6 +24,7 @@ class OfficeEquipment():
 				if yes_or_no == 'y':
 					break
 				else:
+					"""Введите свою оргтехнику"""
 					name = input('Enter name: ')
 					color = input('Enter color: ')
 					year = int(input('Enter year: '))
